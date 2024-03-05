@@ -1,0 +1,13 @@
+.idea
+.fleet
+.env
+
+packages/textract-laravel/node_modules
+packages/textract-laravel/public/hot
+packages/textract-laravel/public/storage
+packages/textract-laravel/storage/*.key
+packages/textract-laravel/vendor
+packages/textract-core/vendor
+
+/vendor/
+.DS_Store
