@@ -1,0 +1,33 @@
+{
+  "users": [
+    {
+      "name": "guest",
+      "password_hash": "6LpXn860XLW+CAHWfm8+TxztB38MPR5619zk10Z9KQZ5GBD1",
+      "hashing_algorithm": "rabbit_password_hashing_sha256",
+      "tags": "administrator"
+    }
+  ],
+  "exchanges": [],
+  "vhosts":[
+    {"name":"/"}
+  ],
+  "queues": [
+    {
+      "name": "tapi_default",
+      "vhost": "/",
+      "durable": true,
+      "auto_delete": false,
+      "arguments": {}
+    }
+  ],
+  "bindings": [],
+  "permissions": [
+    {
+      "user": "guest",
+      "vhost": "\/",
+      "configure": ".*",
+      "write": ".*",
+      "read": ".*"
+    }
+  ]
+}
