@@ -30,3 +30,6 @@ Any useful scripts for testing, supporting local dev etc.
 
 ### .support
 Any supporting files etc that are needed for the project
+
+## Running the project for Laravel
+`docker-compose -f .docker/laravel.compose.yml --env-file .env up -d`
