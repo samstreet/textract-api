@@ -1057,12 +1057,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "c4e8cf5d7e0a4a5f5621e979a07c1ed9167a6e33"
+                "reference": "cebd8d93d722bbf44f75bdecc8c097d2f6701b96"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/c4e8cf5d7e0a4a5f5621e979a07c1ed9167a6e33",
-                "reference": "c4e8cf5d7e0a4a5f5621e979a07c1ed9167a6e33",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/cebd8d93d722bbf44f75bdecc8c097d2f6701b96",
+                "reference": "cebd8d93d722bbf44f75bdecc8c097d2f6701b96",
                 "shasum": ""
             },
             "require": {
@@ -1256,7 +1256,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2024-03-05T15:21:54+00:00"
+            "time": "2024-03-07T16:58:40+00:00"
         },
         {
             "name": "laravel/prompts",
@@ -6357,12 +6357,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "66c160d3f386c9a8858cf8a87d5075580d0e2343"
+                "reference": "5b92d2809fe6c9dbf892e8016df656f16ef157e1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/66c160d3f386c9a8858cf8a87d5075580d0e2343",
-                "reference": "66c160d3f386c9a8858cf8a87d5075580d0e2343",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/5b92d2809fe6c9dbf892e8016df656f16ef157e1",
+                "reference": "5b92d2809fe6c9dbf892e8016df656f16ef157e1",
                 "shasum": ""
             },
             "require": {
@@ -6452,7 +6452,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-03-05T15:58:55+00:00"
+            "time": "2024-03-06T06:47:12+00:00"
         },
         {
             "name": "sebastian/cli-parser",
@@ -7480,5 +7480,5 @@
         "php": "^8.3"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.2.0"
+    "plugin-api-version": "2.6.0"
 }
