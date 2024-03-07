@@ -23,6 +23,7 @@ services:
     volumes:
       - '../packages/textract-laravel:/var/www/html'
       - '../packages/textract-core:/var/www/textract-core'
+      - '../packages/textract-routing:/var/www/textract-routing'
     networks:
       - sail
     depends_on:

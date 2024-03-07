@@ -8,6 +8,7 @@ packages/textract-laravel/public/storage
 packages/textract-laravel/storage/*.key
 packages/textract-laravel/vendor
 packages/textract-core/vendor
+packages/textract-routing/vendor
 
 /vendor/
 .DS_Store

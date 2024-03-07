@@ -1,0 +1,25 @@
+{
+  "name": "textract-api/textract-routing",
+  "minimum-stability": "dev",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "samstreet"
+    }
+  ],
+  "type": "library",
+  "autoload": {
+    "psr-4": {
+      "TextractApi\\Routing\\": "src/"
+    }
+  },
+  "require": {
+    "php": "^8.3",
+    "laravel/framework": "^10"
+  },
+  "config": {
+    "allow-plugins": {
+      "php-http/discovery": false
+    }
+  }
+}

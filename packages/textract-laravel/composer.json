@@ -10,7 +10,8 @@
         "laravel/framework": "^10",
         "laravel/sanctum": "^3.0",
         "laravel/tinker": "^2.7",
-        "textract-api/textract-core": "*"
+        "textract-api/textract-core": "*",
+        "textract-api/textract-routing": "*"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
@@ -65,6 +66,11 @@
         {
             "type": "path",
             "url": "../textract-core",
+            "symlink": true
+        },
+        {
+            "type": "path",
+            "url": "../textract-routing",
             "symlink": true
         }
     ]
