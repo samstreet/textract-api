@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ca6f6c7f3eba96085d1682a4a2f1bb76",
+    "content-hash": "6f2fdd4c41e5c95193188224b2870874",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.300.13",
+            "version": "3.300.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "b1eb7307d30ebcfa4e156971f658c2d177434db3"
+                "reference": "f1e0c37d8403d7097c2c808c184137e6517d54be"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/b1eb7307d30ebcfa4e156971f658c2d177434db3",
-                "reference": "b1eb7307d30ebcfa4e156971f658c2d177434db3",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/f1e0c37d8403d7097c2c808c184137e6517d54be",
+                "reference": "f1e0c37d8403d7097c2c808c184137e6517d54be",
                 "shasum": ""
             },
             "require": {
@@ -151,9 +151,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.300.13"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.300.14"
             },
-            "time": "2024-03-07T19:14:04+00:00"
+            "time": "2024-03-08T19:05:39+00:00"
         },
         {
             "name": "brick/math",
@@ -1206,12 +1206,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "cebd8d93d722bbf44f75bdecc8c097d2f6701b96"
+                "reference": "24d7bd274e3332e8c7248f9ada43879ccbbd5ef6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/cebd8d93d722bbf44f75bdecc8c097d2f6701b96",
-                "reference": "cebd8d93d722bbf44f75bdecc8c097d2f6701b96",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/24d7bd274e3332e8c7248f9ada43879ccbbd5ef6",
+                "reference": "24d7bd274e3332e8c7248f9ada43879ccbbd5ef6",
                 "shasum": ""
             },
             "require": {
@@ -1405,7 +1405,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2024-03-07T16:58:40+00:00"
+            "time": "2024-03-10T15:34:39+00:00"
         },
         {
             "name": "laravel/prompts",
@@ -1856,12 +1856,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "383e17d1373262b2a3d0fe7eb435c1015407518d"
+                "reference": "4c44347133618cccd9b3df1729647a1577b4ad99"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/383e17d1373262b2a3d0fe7eb435c1015407518d",
-                "reference": "383e17d1373262b2a3d0fe7eb435c1015407518d",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/4c44347133618cccd9b3df1729647a1577b4ad99",
+                "reference": "4c44347133618cccd9b3df1729647a1577b4ad99",
                 "shasum": ""
             },
             "require": {
@@ -1927,7 +1927,7 @@
             ],
             "support": {
                 "issues": "https://github.com/thephpleague/flysystem/issues",
-                "source": "https://github.com/thephpleague/flysystem/tree/3.x"
+                "source": "https://github.com/thephpleague/flysystem/tree/3.25.0"
             },
             "funding": [
                 {
@@ -1939,7 +1939,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-03-05T13:30:08+00:00"
+            "time": "2024-03-09T17:06:45+00:00"
         },
         {
             "name": "league/flysystem-local",
@@ -3496,6 +3496,87 @@
                 }
             ],
             "time": "2024-03-04T21:05:57+00:00"
+        },
+        {
+            "name": "squizlabs/php_codesniffer",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PHPCSStandards/PHP_CodeSniffer.git",
+                "reference": "9905515ecd59bbc4da0dca897676f2b04683beec"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PHPCSStandards/PHP_CodeSniffer/zipball/9905515ecd59bbc4da0dca897676f2b04683beec",
+                "reference": "9905515ecd59bbc4da0dca897676f2b04683beec",
+                "shasum": ""
+            },
+            "require": {
+                "ext-simplexml": "*",
+                "ext-tokenizer": "*",
+                "ext-xmlwriter": "*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.0 || ^5.0 || ^6.0 || ^7.0 || ^8.0 || ^9.3.4"
+            },
+            "default-branch": true,
+            "bin": [
+                "bin/phpcbf",
+                "bin/phpcs"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Greg Sherwood",
+                    "role": "Former lead"
+                },
+                {
+                    "name": "Juliette Reinders Folmer",
+                    "role": "Current lead"
+                },
+                {
+                    "name": "Contributors",
+                    "homepage": "https://github.com/PHPCSStandards/PHP_CodeSniffer/graphs/contributors"
+                }
+            ],
+            "description": "PHP_CodeSniffer tokenizes PHP, JavaScript and CSS files and detects violations of a defined set of coding standards.",
+            "homepage": "https://github.com/PHPCSStandards/PHP_CodeSniffer",
+            "keywords": [
+                "phpcs",
+                "standards",
+                "static analysis"
+            ],
+            "support": {
+                "issues": "https://github.com/PHPCSStandards/PHP_CodeSniffer/issues",
+                "security": "https://github.com/PHPCSStandards/PHP_CodeSniffer/security/policy",
+                "source": "https://github.com/PHPCSStandards/PHP_CodeSniffer",
+                "wiki": "https://github.com/PHPCSStandards/PHP_CodeSniffer/wiki"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/PHPCSStandards",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/jrfnl",
+                    "type": "github"
+                },
+                {
+                    "url": "https://opencollective.com/php_codesniffer",
+                    "type": "open_collective"
+                }
+            ],
+            "time": "2024-03-08T21:27:43+00:00"
         },
         {
             "name": "symfony/console",
@@ -5327,12 +5408,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/string.git",
-                "reference": "3d0a98879bbc7585aff5f9a5a539074328cc2ca0"
+                "reference": "ef964850371aca5def9fc8a3059d9b1690bb3b6c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/string/zipball/3d0a98879bbc7585aff5f9a5a539074328cc2ca0",
-                "reference": "3d0a98879bbc7585aff5f9a5a539074328cc2ca0",
+                "url": "https://api.github.com/repos/symfony/string/zipball/ef964850371aca5def9fc8a3059d9b1690bb3b6c",
+                "reference": "ef964850371aca5def9fc8a3059d9b1690bb3b6c",
                 "shasum": ""
             },
             "require": {
@@ -5406,7 +5487,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-02-03T19:41:36+00:00"
+            "time": "2024-03-08T12:55:53+00:00"
         },
         {
             "name": "symfony/translation",
@@ -5747,14 +5828,15 @@
             "dist": {
                 "type": "path",
                 "url": "../textract-core",
-                "reference": "f4663d10c1e56917298415e4e2502df1f454e4f9"
+                "reference": "6887276508e3145b7e7d55e9db4b880254ce4e77"
             },
             "require": {
                 "aws/aws-sdk-php": "^3.300",
                 "guzzlehttp/guzzle": "^7.0.1",
                 "laravel/framework": "^10",
                 "php": "^8.3",
-                "predis/predis": "^1.1"
+                "predis/predis": "^1.1",
+                "squizlabs/php_codesniffer": "3.*"
             },
             "require-dev": {
                 "fakerphp/faker": "^1.9.1",
@@ -5786,11 +5868,12 @@
             "dist": {
                 "type": "path",
                 "url": "../textract-routing",
-                "reference": "0200ed0202ff3da9a0b5025ddbd6af783a053770"
+                "reference": "e79faa3999364954a16470fdb557985d47e0d059"
             },
             "require": {
                 "laravel/framework": "^10",
-                "php": "^8.3"
+                "php": "^8.3",
+                "squizlabs/php_codesniffer": "3.*"
             },
             "type": "library",
             "autoload": {
@@ -6412,12 +6495,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/sail.git",
-                "reference": "cd032b093d7d982be9f5ea31fc290d44980edb1c"
+                "reference": "e40cc7ffb5186c45698dbd47e9477e0e429396d0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/sail/zipball/cd032b093d7d982be9f5ea31fc290d44980edb1c",
-                "reference": "cd032b093d7d982be9f5ea31fc290d44980edb1c",
+                "url": "https://api.github.com/repos/laravel/sail/zipball/e40cc7ffb5186c45698dbd47e9477e0e429396d0",
+                "reference": "e40cc7ffb5186c45698dbd47e9477e0e429396d0",
                 "shasum": ""
             },
             "require": {
@@ -6467,7 +6550,7 @@
                 "issues": "https://github.com/laravel/sail/issues",
                 "source": "https://github.com/laravel/sail"
             },
-            "time": "2024-03-07T17:14:36+00:00"
+            "time": "2024-03-08T16:32:33+00:00"
         },
         {
             "name": "mockery/mockery",
@@ -7144,12 +7227,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "5b92d2809fe6c9dbf892e8016df656f16ef157e1"
+                "reference": "361651345cffe44ab28d3dd91f04450d54a4acf4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/5b92d2809fe6c9dbf892e8016df656f16ef157e1",
-                "reference": "5b92d2809fe6c9dbf892e8016df656f16ef157e1",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/361651345cffe44ab28d3dd91f04450d54a4acf4",
+                "reference": "361651345cffe44ab28d3dd91f04450d54a4acf4",
                 "shasum": ""
             },
             "require": {
@@ -7239,7 +7322,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-03-06T06:47:12+00:00"
+            "time": "2024-03-10T12:39:09+00:00"
         },
         {
             "name": "sebastian/cli-parser",

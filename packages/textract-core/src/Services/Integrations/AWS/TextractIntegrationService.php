@@ -11,7 +11,8 @@ class TextractIntegrationService extends CoreService implements TextractIntegrat
     public const string UPLOAD_SUCCESS = 'success';
 
     public function __construct(private AWSClientService $AWSClientService)
-    {}
+    {
+    }
 
     public function upload(string $pdf): bool
     {
@@ -42,6 +43,4 @@ class TextractIntegrationService extends CoreService implements TextractIntegrat
             return new ExtractedWords();
         }
     }
-
-
 }

@@ -10,6 +10,5 @@ final class AWSClientService
 
     public function __construct()
     {
-
     }
 }
