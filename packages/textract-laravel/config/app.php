@@ -1,7 +1,8 @@
 <?php
 
 use App\Providers\Routes\CreateTextractUploadRouteServiceProvider;
-use App\Providers\Routes\TextractUploadRouteServiceProvider;
+use App\Providers\Routes\DeleteTextractUploadRouteServiceProvider;
+use App\Providers\Routes\TextractUploadStatusRouteServiceProvider;
 use Illuminate\Support\Facades\Facade;
 use TextractApi\Core\Providers\CoreRepositoryServiceProvider;
 use TextractApi\Core\Providers\CoreServiceProvider;
@@ -186,20 +187,14 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
 
-        /*
-         * Package Service Providers...
-         */
-        CoreServiceProvider::class,
-        CoreRepositoryServiceProvider::class,
-
-        /*
-         * Application Service Providers...
-         */
         App\Providers\AppServiceProvider::class,
         App\Providers\AuthServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
+
+        CoreServiceProvider::class,
+        CoreRepositoryServiceProvider::class,
         CreateTextractUploadRouteServiceProvider::class,
-        TextractUploadRouteServiceProvider::class
+        TextractUploadStatusRouteServiceProvider::class,
+        DeleteTextractUploadRouteServiceProvider::class
 
     ],
 

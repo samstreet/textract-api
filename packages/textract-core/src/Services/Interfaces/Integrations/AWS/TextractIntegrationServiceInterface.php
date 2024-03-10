@@ -1,9 +1,10 @@
 <?php
 
-namespace TextractApi\Core\Services;
+namespace TextractApi\Core\Services\Interfaces\Integrations\AWS;
 
 use TextractAPI\Core\Bridge\DTO\Integrations\AWS\ExtractedWords;
 use TextractApi\Core\Services\Interfaces\CoreServiceInterface;
+use TextractApi\Core\Storage\Entity\Uploads;
 
 interface TextractIntegrationServiceInterface extends CoreServiceInterface
 {
@@ -15,4 +16,6 @@ interface TextractIntegrationServiceInterface extends CoreServiceInterface
 
     /** get the extracted words from an upload */
     public function extractedData(string $uuid): ExtractedWords;
+
+    public function findByUUID(string $uuid): ?Uploads;
 }

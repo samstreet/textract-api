@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6f2fdd4c41e5c95193188224b2870874",
+    "content-hash": "bf405345faf6804f2b8633fccb2e521e",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.300.14",
+            "version": "3.300.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "f1e0c37d8403d7097c2c808c184137e6517d54be"
+                "reference": "0cd194438b84588615121a93d0bc46bf55ca678b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/f1e0c37d8403d7097c2c808c184137e6517d54be",
-                "reference": "f1e0c37d8403d7097c2c808c184137e6517d54be",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/0cd194438b84588615121a93d0bc46bf55ca678b",
+                "reference": "0cd194438b84588615121a93d0bc46bf55ca678b",
                 "shasum": ""
             },
             "require": {
@@ -151,9 +151,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.300.14"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.300.15"
             },
-            "time": "2024-03-08T19:05:39+00:00"
+            "time": "2024-03-11T18:33:13+00:00"
         },
         {
             "name": "brick/math",
@@ -1206,12 +1206,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "24d7bd274e3332e8c7248f9ada43879ccbbd5ef6"
+                "reference": "ce7f5b15305734ddda21b1b2be5b89204d3827e1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/24d7bd274e3332e8c7248f9ada43879ccbbd5ef6",
-                "reference": "24d7bd274e3332e8c7248f9ada43879ccbbd5ef6",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/ce7f5b15305734ddda21b1b2be5b89204d3827e1",
+                "reference": "ce7f5b15305734ddda21b1b2be5b89204d3827e1",
                 "shasum": ""
             },
             "require": {
@@ -1259,6 +1259,7 @@
             "conflict": {
                 "carbonphp/carbon-doctrine-types": ">=3.0",
                 "doctrine/dbal": ">=4.0",
+                "mockery/mockery": "1.6.8",
                 "phpunit/phpunit": ">=11.0.0",
                 "tightenco/collect": "<5.5.33"
             },
@@ -1361,7 +1362,6 @@
                 "symfony/postmark-mailer": "Required to enable support for the Postmark mail transport (^6.2).",
                 "symfony/psr-http-message-bridge": "Required to use PSR-7 bridging features (^2.0)."
             },
-            "default-branch": true,
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -1405,7 +1405,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2024-03-10T15:34:39+00:00"
+            "time": "2024-03-12T16:39:30+00:00"
         },
         {
             "name": "laravel/prompts",
@@ -3410,12 +3410,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ramsey/uuid.git",
-                "reference": "edaf8f7a01f8992e05b34599f4d7507f6396873c"
+                "reference": "7de47955d8d3b77b8b7f37c6ce0681fa799317c1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ramsey/uuid/zipball/edaf8f7a01f8992e05b34599f4d7507f6396873c",
-                "reference": "edaf8f7a01f8992e05b34599f4d7507f6396873c",
+                "url": "https://api.github.com/repos/ramsey/uuid/zipball/7de47955d8d3b77b8b7f37c6ce0681fa799317c1",
+                "reference": "7de47955d8d3b77b8b7f37c6ce0681fa799317c1",
                 "shasum": ""
             },
             "require": {
@@ -3495,7 +3495,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-03-04T21:05:57+00:00"
+            "time": "2024-03-11T21:52:12+00:00"
         },
         {
             "name": "squizlabs/php_codesniffer",
@@ -3811,12 +3811,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/error-handler.git",
-                "reference": "c725219bdf2afc59423c32793d5019d2a904e13a"
+                "reference": "e3885734c1267d8330b06b7d9062a3bc54c5863e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/error-handler/zipball/c725219bdf2afc59423c32793d5019d2a904e13a",
-                "reference": "c725219bdf2afc59423c32793d5019d2a904e13a",
+                "url": "https://api.github.com/repos/symfony/error-handler/zipball/e3885734c1267d8330b06b7d9062a3bc54c5863e",
+                "reference": "e3885734c1267d8330b06b7d9062a3bc54c5863e",
                 "shasum": ""
             },
             "require": {
@@ -3878,7 +3878,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-02-22T20:27:10+00:00"
+            "time": "2024-03-12T14:58:20+00:00"
         },
         {
             "name": "symfony/event-dispatcher",
@@ -4184,12 +4184,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-kernel.git",
-                "reference": "df0c04b049ddeabb3705a1b6ce1a99fe83fdd670"
+                "reference": "23a87cd1ffa60fd06532781ca87f7003ed0921f7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-kernel/zipball/df0c04b049ddeabb3705a1b6ce1a99fe83fdd670",
-                "reference": "df0c04b049ddeabb3705a1b6ce1a99fe83fdd670",
+                "url": "https://api.github.com/repos/symfony/http-kernel/zipball/23a87cd1ffa60fd06532781ca87f7003ed0921f7",
+                "reference": "23a87cd1ffa60fd06532781ca87f7003ed0921f7",
                 "shasum": ""
             },
             "require": {
@@ -4289,7 +4289,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-03-04T21:04:43+00:00"
+            "time": "2024-03-12T14:18:29+00:00"
         },
         {
             "name": "symfony/mailer",
@@ -4297,12 +4297,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/mailer.git",
-                "reference": "791c5d31a8204cf3db0c66faab70282307f4376b"
+                "reference": "b2c840d7b7f60e649b6a646e3be2b509e94a352c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/mailer/zipball/791c5d31a8204cf3db0c66faab70282307f4376b",
-                "reference": "791c5d31a8204cf3db0c66faab70282307f4376b",
+                "url": "https://api.github.com/repos/symfony/mailer/zipball/b2c840d7b7f60e649b6a646e3be2b509e94a352c",
+                "reference": "b2c840d7b7f60e649b6a646e3be2b509e94a352c",
                 "shasum": ""
             },
             "require": {
@@ -4369,7 +4369,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-02-03T21:33:47+00:00"
+            "time": "2024-03-12T14:06:11+00:00"
         },
         {
             "name": "symfony/mime",
@@ -5743,12 +5743,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "b439823f04c98b84d4366c79507e9da6230944b1"
+                "reference": "c62864fe5f91c6e9c7e3d63b5aae63ae7e7b1c7a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/b439823f04c98b84d4366c79507e9da6230944b1",
-                "reference": "b439823f04c98b84d4366c79507e9da6230944b1",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/c62864fe5f91c6e9c7e3d63b5aae63ae7e7b1c7a",
+                "reference": "c62864fe5f91c6e9c7e3d63b5aae63ae7e7b1c7a",
                 "shasum": ""
             },
             "require": {
@@ -5820,20 +5820,22 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-02-15T11:23:52+00:00"
+            "time": "2024-03-12T14:06:11+00:00"
         },
         {
             "name": "textract-api/textract-core",
-            "version": "dev-main",
+            "version": "v0.0.15",
             "dist": {
                 "type": "path",
                 "url": "../textract-core",
-                "reference": "6887276508e3145b7e7d55e9db4b880254ce4e77"
+                "reference": "8682d1cbddec56c6148fdd247911f90a1b56178a"
             },
             "require": {
                 "aws/aws-sdk-php": "^3.300",
-                "guzzlehttp/guzzle": "^7.0.1",
+                "guzzlehttp/guzzle": "^7.2",
                 "laravel/framework": "^10",
+                "laravel/sanctum": "^3.0",
+                "laravel/tinker": "^2.7",
                 "php": "^8.3",
                 "predis/predis": "^1.1",
                 "squizlabs/php_codesniffer": "3.*"
@@ -5848,7 +5850,10 @@
                 "psr-4": {
                     "TextractApi\\Core\\": "src/",
                     "TextractApi\\Test\\": "test/"
-                }
+                },
+                "classmap": [
+                    "src/"
+                ]
             },
             "license": [
                 "proprietary"
@@ -7227,12 +7232,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "361651345cffe44ab28d3dd91f04450d54a4acf4"
+                "reference": "b27e39a695fdd176fecd7fa692d35c57f9151344"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/361651345cffe44ab28d3dd91f04450d54a4acf4",
-                "reference": "361651345cffe44ab28d3dd91f04450d54a4acf4",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/b27e39a695fdd176fecd7fa692d35c57f9151344",
+                "reference": "b27e39a695fdd176fecd7fa692d35c57f9151344",
                 "shasum": ""
             },
             "require": {
@@ -7322,7 +7327,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-03-10T12:39:09+00:00"
+            "time": "2024-03-12T06:04:11+00:00"
         },
         {
             "name": "sebastian/cli-parser",

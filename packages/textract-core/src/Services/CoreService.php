@@ -3,10 +3,10 @@
 namespace TextractApi\Core\Services;
 
 use TextractApi\Core\Services\Interfaces\CoreServiceInterface;
-use TextractApi\Core\Storage\Repository\RepositoryInterface;
+use TextractApi\Core\Storage\Repository\CoreRepositoryInterface;
 
 /**
- * @property RepositoryInterface $repository
+ * @property CoreRepositoryInterface $repository
  */
 abstract class CoreService implements CoreServiceInterface
 {
@@ -15,7 +15,7 @@ abstract class CoreService implements CoreServiceInterface
         return $this->repository;
     }
 
-    public function setRepository(RepositoryInterface $repository): void
+    public function setRepository(CoreRepositoryInterface $repository): void
     {
         $this->repository = $repository;
     }

@@ -1,6 +1,6 @@
 <?php
 
-namespace TextractApi\Core\Services;
+namespace TextractApi\Core\Services\Integrations\AWS;
 
 use Aws\AwsClient;
 

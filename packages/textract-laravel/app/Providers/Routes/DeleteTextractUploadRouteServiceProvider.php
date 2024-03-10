@@ -3,10 +3,11 @@
 namespace App\Providers\Routes;
 
 use App\Http\Controllers\CreateTextractUploadController;
-use TextractApi\Routing\Providers\Routes\RouteServiceProvider;
+use App\Http\Controllers\DeleteTextractUploadController;
 use Symfony\Component\HttpFoundation\Request;
+use TextractApi\Routing\Providers\Routes\RouteServiceProvider;
 
-class CreateTextractUploadRouteServiceProvider extends RouteServiceProvider
+class DeleteTextractUploadRouteServiceProvider extends RouteServiceProvider
 {
     protected array $attributes = [
         'prefix' => '/api/textract',
@@ -16,10 +17,10 @@ class CreateTextractUploadRouteServiceProvider extends RouteServiceProvider
     protected array $allowedMethods = [
         Request::METHOD_HEAD,
         Request::METHOD_OPTIONS,
-        Request::METHOD_POST,
+        Request::METHOD_DELETE,
     ];
 
-    protected string $controller = CreateTextractUploadController::class;
+    protected string $controller = DeleteTextractUploadController::class;
 
     protected string $routeNamePrefix = 'textract.upload';
 }
