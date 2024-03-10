@@ -2,11 +2,11 @@
 
 namespace TextractApi\Core\Services\Interfaces;
 
-use TextractApi\Core\Storage\Repository\RepositoryInterface;
+use TextractApi\Core\Storage\Repository\CoreRepositoryInterface;
 
 interface CoreServiceInterface
 {
     public function getRepository();
 
-    public function setRepository(RepositoryInterface $repository): void;
+    public function setRepository(CoreRepositoryInterface $repository): void;
 }

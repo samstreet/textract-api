@@ -9,13 +9,8 @@
   "license": "MIT",
   "require": {
     "php": "^8.3",
-    "guzzlehttp/guzzle": "^7.2",
-    "laravel/framework": "^10",
-    "laravel/sanctum": "^3.0",
-    "laravel/tinker": "^2.7",
     "textract-api/textract-core": "*",
-    "textract-api/textract-routing": "*",
-    "squizlabs/php_codesniffer": "3.*"
+    "textract-api/textract-routing": "*"
   },
   "require-dev": {
     "fakerphp/faker": "^1.9.1",
@@ -59,7 +54,6 @@
   },
   "config": {
     "optimize-autoloader": true,
-    "preferred-install": "dist",
     "sort-packages": true,
     "allow-plugins": {
       "pestphp/pest-plugin": true

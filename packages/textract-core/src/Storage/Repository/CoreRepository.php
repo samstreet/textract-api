@@ -2,12 +2,13 @@
 
 namespace TextractApi\Core\Storage\Repository;
 
-use Illuminate\Support\Arr;
-use TextractApi\Core\Storage\Concerns;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Arr;
+use TextractApi\Core\Storage\Concerns;
+use TextractApi\Core\Storage\Repository\Interfaces\CoreRepositoryInterface;
 
-class Repository implements RepositoryInterface
+class CoreRepository implements CoreRepositoryInterface
 {
     use Concerns\HasEntity;
 
@@ -37,6 +38,12 @@ class Repository implements RepositoryInterface
     {
         return $this->builder()->findOrFail($value);
     }
+
+    public function findUsingUUID(string $uuid): Model
+    {
+        return $this->builder()->where('uuid', $uuid)->firstOrFail();
+    }
+
 
     public function builder(): Builder
     {

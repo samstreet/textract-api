@@ -2,18 +2,20 @@
 
 namespace TextractApi\Core\Providers;
 
-use TextractApi\Core\Services\TextractIntegrationService;
-use TextractApi\Core\Services\TextractIntegrationServiceInterface;
+use TextractApi\Core\Services\Integrations\AWS\TextractIntegrationService;
+use TextractApi\Core\Services\Interfaces\Integrations\AWS\TextractIntegrationServiceInterface;
 
 final class CoreServiceProvider extends ServiceProvider
 {
     public array $singletons = [
-        TextractIntegrationService::class,
+        TextractIntegrationServiceInterface::class => TextractIntegrationService::class,
 
     ];
 
-    public array $bindings = [
-        TextractIntegrationServiceInterface::class,
-
-    ];
+    public function provides(): array
+    {
+        return [
+            TextractIntegrationServiceInterface::class
+        ];
+    }
 }

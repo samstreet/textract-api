@@ -2,6 +2,7 @@
   "name": "textract-api/textract-core",
   "minimum-stability": "dev",
   "license": "proprietary",
+  "version": "v0.0.15",
   "authors": [
     {
       "name": "samstreet"
@@ -12,12 +13,17 @@
     "psr-4": {
       "TextractApi\\Core\\": "src/",
       "TextractApi\\Test\\": "test/"
-    }
+    },
+    "classmap": [
+      "src/"
+    ]
   },
   "require": {
     "php": "^8.3",
-    "guzzlehttp/guzzle": "^7.0.1",
+    "guzzlehttp/guzzle": "^7.2",
     "laravel/framework": "^10",
+    "laravel/sanctum": "^3.0",
+    "laravel/tinker": "^2.7",
     "predis/predis": "^1.1",
     "aws/aws-sdk-php": "^3.300",
     "squizlabs/php_codesniffer": "3.*"

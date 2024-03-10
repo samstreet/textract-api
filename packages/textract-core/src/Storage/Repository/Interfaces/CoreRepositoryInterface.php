@@ -1,11 +1,11 @@
 <?php
 
-namespace TextractApi\Core\Storage\Repository;
+namespace TextractApi\Core\Storage\Repository\Interfaces;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 
-interface RepositoryInterface
+interface CoreRepositoryInterface
 {
     public function builder(): Builder;
 
@@ -16,6 +16,8 @@ interface RepositoryInterface
     public function deleteMany(array $records): void;
 
     public function findUsingId(int $value): Model;
+
+    public function findUsingUUID(string $uuid): Model;
 
     public function getFillableAttributes(array $parameters): array;
 

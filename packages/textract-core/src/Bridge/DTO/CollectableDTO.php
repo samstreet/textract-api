@@ -2,7 +2,7 @@
 
 namespace TextractAPI\Core\Bridge\DTO;
 
-abstract class CollectableDTO extends ImmutableDTO
+class CollectableDTO extends ImmutableDTO
 {
     protected array $list;
 

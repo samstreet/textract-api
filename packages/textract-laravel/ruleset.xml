@@ -77,7 +77,7 @@
         <exclude name="Generic.Strings.UnnecessaryStringConcat.Found)"/>
     </rule>
 
-    <file>src</file>
+    <file>app</file>
     <file>tests</file>
 
     <arg name="colors"/>

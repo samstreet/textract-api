@@ -1,8 +1,13 @@
 <?php
 
-namespace TextractApi\Core\Services;
+namespace TextractApi\Core\Services\Integrations\AWS;
 
+use Psy\Exception\ThrowUpException;
 use TextractAPI\Core\Bridge\DTO\Integrations\AWS\ExtractedWords;
+use TextractApi\Core\Services\Interfaces\Integrations\AWS\TextractIntegrationServiceInterface;
+use TextractApi\Core\Services\CoreService;
+use TextractApi\Core\Storage\Entity\Uploads;
+use TextractAPI\Core\Storage\Repository\Integrations\AWS\TextractIntegrationRepositoryInterface;
 
 class TextractIntegrationService extends CoreService implements TextractIntegrationServiceInterface
 {
@@ -10,7 +15,7 @@ class TextractIntegrationService extends CoreService implements TextractIntegrat
     public const string UPLOAD_FAILED = 'failed';
     public const string UPLOAD_SUCCESS = 'success';
 
-    public function __construct(private AWSClientService $AWSClientService)
+    public function __construct(private readonly TextractIntegrationRepositoryInterface $repository)
     {
     }
 
@@ -27,7 +32,8 @@ class TextractIntegrationService extends CoreService implements TextractIntegrat
     public function status(string $uuid): string
     {
         try {
-            return TextractIntegrationService::UPLOAD_IN_PROGRESS;
+            $upload = $this->repository->findUsingUUID($uuid);
+            return $upload->status;
         } catch (\Throwable $exception) {
             logger()->error(__METHOD__, ['error' => $exception->getMessage()]);
             return TextractIntegrationService::UPLOAD_FAILED;
@@ -41,6 +47,16 @@ class TextractIntegrationService extends CoreService implements TextractIntegrat
         } catch (\Throwable $exception) {
             logger()->error(__METHOD__, ['error' => $exception->getMessage()]);
             return new ExtractedWords();
+        }
+    }
+
+    public function findByUUID(string $uuid): ?Uploads
+    {
+        try {
+            return $this->repository->findUsingUUID($uuid);
+        } catch (\Throwable $exception) {
+            logger()->error(__METHOD__, ['error' => $exception->getMessage()]);
+            return null;
         }
     }
 }
