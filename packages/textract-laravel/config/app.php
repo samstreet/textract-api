@@ -3,6 +3,8 @@
 use App\Providers\Routes\CreateTextractUploadRouteServiceProvider;
 use App\Providers\Routes\TextractUploadRouteServiceProvider;
 use Illuminate\Support\Facades\Facade;
+use TextractApi\Core\Providers\CoreRepositoryServiceProvider;
+use TextractApi\Core\Providers\CoreServiceProvider;
 
 return [
 
@@ -187,6 +189,8 @@ return [
         /*
          * Package Service Providers...
          */
+        CoreServiceProvider::class,
+        CoreRepositoryServiceProvider::class,
 
         /*
          * Application Service Providers...
