@@ -78,7 +78,6 @@
     </rule>
 
     <file>src</file>
-    <file>tests</file>
 
     <arg name="colors"/>
     <ini name="memory_limit" value="128M"/>
