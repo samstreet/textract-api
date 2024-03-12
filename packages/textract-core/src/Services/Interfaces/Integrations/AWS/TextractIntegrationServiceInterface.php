@@ -17,5 +17,8 @@ interface TextractIntegrationServiceInterface extends CoreServiceInterface
     /** get the extracted words from an upload */
     public function extractedData(string $uuid): ExtractedWords;
 
+    /** find an upload by it's uuid */
     public function findByUUID(string $uuid): ?Uploads;
+
+    public function deleteUpload(Uploads $upload): bool;
 }

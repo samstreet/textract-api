@@ -10,7 +10,7 @@ use TextractApi\Routing\Providers\Routes\RouteServiceProvider;
 class DeleteTextractUploadRouteServiceProvider extends RouteServiceProvider
 {
     protected array $attributes = [
-        'prefix' => '/api/textract',
+        'prefix' => '/api/textract/{uuid}',
         'middleware' => 'cache.headers:public;max_age=8600;etag',
     ];
 
