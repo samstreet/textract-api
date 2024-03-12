@@ -9,7 +9,7 @@ use TextractApi\Core\Storage\Entity\Uploads;
 interface TextractIntegrationServiceInterface extends CoreServiceInterface
 {
     /** Upload the base64 encoded pdf to the AWS textract service */
-    public function upload(string $pdf): bool;
+    public function upload(string $pdf): ?Uploads;
 
     /** Get a status for an upload */
     public function status(string $uuid): string;

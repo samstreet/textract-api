@@ -2,17 +2,18 @@
 
 namespace TextractApi\Core\Storage\Entity;
 
-use DateTime;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
 /**
  * @property string uuid
  * @property string status
- * @property DateTime uploaded_at
+ * @property string uploaded_at
  */
 class Uploads extends Model
 {
+    public $timestamps = false;
+
     protected $table = 'uploads';
 
     protected $fillable = [

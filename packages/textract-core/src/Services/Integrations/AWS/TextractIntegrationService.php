@@ -2,6 +2,8 @@
 
 namespace TextractApi\Core\Services\Integrations\AWS;
 
+use DateTimeInterface;
+use Illuminate\Support\Facades\DB;
 use Psy\Exception\ThrowUpException;
 use TextractAPI\Core\Bridge\DTO\Integrations\AWS\ExtractedWords;
 use TextractApi\Core\Services\Interfaces\Integrations\AWS\TextractIntegrationServiceInterface;
@@ -15,17 +17,31 @@ class TextractIntegrationService extends CoreService implements TextractIntegrat
     public const string UPLOAD_FAILED = 'failed';
     public const string UPLOAD_SUCCESS = 'success';
 
-    public function __construct(private readonly TextractIntegrationRepositoryInterface $repository)
+    public function __construct(private readonly TextractIntegrationRepositoryInterface $repository, private AWSClientService $AWSClientService)
     {
     }
 
-    public function upload(string $pdf): bool
+    public function upload(string $pdf): ?Uploads
     {
         try {
-            return true;
+            $upload = new Uploads([
+                'uuid' => uuid_create(),
+                'status' => static::UPLOAD_IN_PROGRESS
+            ]);
+
+            $saved = $this->repository->save($upload);
+            $dispatched = false;
+            if ($saved) {
+                $this->AWSClientService->
+                $dispatched = true;
+            }
+
+            if ($saved && $dispatched) return $upload;
+
+            throw new \Exception('Unable to create upload');
         } catch (\Throwable $exception) {
             logger()->error(__METHOD__, ['error' => $exception->getMessage()]);
-            return false;
+            return null;
         }
     }
 

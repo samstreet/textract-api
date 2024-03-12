@@ -10,5 +10,11 @@ final class AWSClientService
 
     public function __construct()
     {
+        $this->client = new AwsClient([]);
+    }
+
+    public function extractPDFContent(string $pdf)
+    {
+
     }
 }
