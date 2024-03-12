@@ -59,4 +59,17 @@ class TextractIntegrationService extends CoreService implements TextractIntegrat
             return null;
         }
     }
+
+    public function deleteUpload(Uploads $upload): bool
+    {
+        try {
+            $this->repository->deleteMany($upload->content()->get()->all());
+            $this->repository->delete($upload);
+
+            return true;
+        } catch (\Throwable $exception) {
+            logger()->error(__METHOD__, ['error' => $exception->getMessage()]);
+            return false;
+        }
+    }
 }

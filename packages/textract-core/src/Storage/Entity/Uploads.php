@@ -23,6 +23,6 @@ class Uploads extends Model
 
     public function content(): HasMany
     {
-        return $this->hasMany(UploadContent::class);
+        return $this->hasMany(UploadContent::class, 'upload_id', 'id');
     }
 }
