@@ -4,6 +4,7 @@ namespace App\Exceptions;
 
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 use Illuminate\Http\JsonResponse;
+use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Exception\HttpExceptionInterface;
 use Throwable;
 
@@ -32,6 +33,6 @@ class Handler extends ExceptionHandler
 
     public function render($request, Throwable $e): JsonResponse
     {
-        return response()->json(['error' => $e->getMessage()], $e->getCode());
+        return response()->json(['error' => $e->getMessage()], $e->getCode() > 0 ? $e->getCode() : Response::HTTP_UNPROCESSABLE_ENTITY);
     }
 }

@@ -10,6 +10,8 @@ class UploadContent extends Model
 {
     protected $table = 'upload_content';
 
+    public $timestamps = false;
+
     protected $fillable = [
         'upload_id',
         'content'

@@ -9,8 +9,10 @@
   "license": "MIT",
   "require": {
     "php": "^8.3",
+    "aws/aws-sdk-php-laravel": "dev-master",
     "textract-api/textract-core": "*",
-    "textract-api/textract-routing": "*"
+    "textract-api/textract-routing": "*",
+    "vladimir-yuldashev/laravel-queue-rabbitmq": "^13.3"
   },
   "require-dev": {
     "fakerphp/faker": "^1.9.1",

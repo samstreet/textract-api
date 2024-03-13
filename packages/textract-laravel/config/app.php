@@ -3,6 +3,7 @@
 use App\Providers\Routes\CreateTextractUploadRouteServiceProvider;
 use App\Providers\Routes\DeleteTextractUploadRouteServiceProvider;
 use App\Providers\Routes\TextractUploadStatusRouteServiceProvider;
+use Aws\Laravel\AwsFacade;
 use Illuminate\Support\Facades\Facade;
 use TextractApi\Core\Providers\CoreRepositoryServiceProvider;
 use TextractApi\Core\Providers\CoreServiceProvider;
@@ -189,6 +190,7 @@ return [
 
         App\Providers\AppServiceProvider::class,
         App\Providers\AuthServiceProvider::class,
+        Aws\Laravel\AwsServiceProvider::class,
 
         CoreServiceProvider::class,
         CoreRepositoryServiceProvider::class,
@@ -197,5 +199,9 @@ return [
         DeleteTextractUploadRouteServiceProvider::class
 
     ],
+
+    'aliases' => [
+        'AWS' => AwsFacade::class
+    ]
 
 ];
