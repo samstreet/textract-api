@@ -3,6 +3,8 @@
 namespace TextractApi\Core\Services\Integrations\AWS;
 
 use Aws\AwsClient;
+use Illuminate\Support\Collection;
+use Illuminate\Support\Facades\App;
 
 final class AWSClientService
 {
@@ -10,11 +12,17 @@ final class AWSClientService
 
     public function __construct()
     {
-        $this->client = new AwsClient([]);
     }
 
-    public function extractPDFContent(string $pdf)
+    public function extractPDFContent(string $pdf): Collection
     {
+        $response = $this->client->analyzeDocument([
+            'Document' => [
+                'Bytes' => $pdf
+            ],
+            'FeatureTypes' => ['TABLES', 'FORMS', 'QUERIES'],
+        ]);
 
+        return new Collection();
     }
 }

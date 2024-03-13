@@ -19,4 +19,9 @@ class TextractUploadRequest extends CoreRequest
     {
         return chunk_split(base64_encode(file_get_contents($this->file('pdf'))));
     }
+
+    public function getFile()
+    {
+        return $this->file('pdf');
+    }
 }

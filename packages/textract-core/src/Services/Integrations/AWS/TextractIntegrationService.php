@@ -2,12 +2,10 @@
 
 namespace TextractApi\Core\Services\Integrations\AWS;
 
-use DateTimeInterface;
-use Illuminate\Support\Facades\DB;
-use Psy\Exception\ThrowUpException;
 use TextractAPI\Core\Bridge\DTO\Integrations\AWS\ExtractedWords;
-use TextractApi\Core\Services\Interfaces\Integrations\AWS\TextractIntegrationServiceInterface;
+use TextractApi\Core\Integrations\AWS\Jobs\ProcessDocument;
 use TextractApi\Core\Services\CoreService;
+use TextractApi\Core\Services\Interfaces\Integrations\AWS\TextractIntegrationServiceInterface;
 use TextractApi\Core\Storage\Entity\Uploads;
 use TextractAPI\Core\Storage\Repository\Integrations\AWS\TextractIntegrationRepositoryInterface;
 
@@ -30,13 +28,8 @@ class TextractIntegrationService extends CoreService implements TextractIntegrat
             ]);
 
             $saved = $this->repository->save($upload);
-            $dispatched = false;
-            if ($saved) {
-                $this->AWSClientService->
-                $dispatched = true;
-            }
 
-            if ($saved && $dispatched) return $upload;
+            if ($saved) return $upload;
 
             throw new \Exception('Unable to create upload');
         } catch (\Throwable $exception) {
