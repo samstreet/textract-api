@@ -33,6 +33,9 @@ Any supporting files etc that are needed for the project
 - `cd packages/textract-laravel && cp .env.example .env`
   - add the relevant AWS KEY and AWS SECRET (these are supplied in an email to point to my AWS)
 - `docker-compose -f .docker/laravel.compose.yml --env-file .env up -d`
+- Exec into the textract-api.test container and run `cd packages/textract-routing && composer install`
+- Exec into the textract-api.test container and run `cd packages/textract-core && composer install`
+- Exec into the textract-api.test container and run `cd packages/textract-laravel && composer install`
 - Exec into the textract-api.test container and run `php artisan migrate`
 - In postman (or other endpoint client)
   - `GET http://localhost:8080/api/textract/{uuid}/status` will show you the status of an upload
